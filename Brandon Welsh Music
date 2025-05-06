@@ -1,4 +1,6 @@
 import React from "react";
+import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 import { Instagram, Music, Calendar } from "lucide-react";
 
 export default function BrandonWelshArtistPage() {
@@ -22,12 +24,18 @@ export default function BrandonWelshArtistPage() {
 
       <section className="my-12 text-center">
         <h2 className="text-3xl font-semibold mb-4">Upcoming Release</h2>
-        <div className="bg-gray-900 border border-gray-700 rounded-xl p-4">
-          <h3 className="text-xl font-medium">New Song: "Sense of Direction"</h3>
-          <p className="text-sm">Releasing on May 20th, 2025 — All Platforms</p>
-          <img src="https://www.instagram.com/brandon_welsh_415/media/?size=l" alt="Cover Art" className="mt-4 w-full max-w-xs mx-auto rounded-xl" />
-          <p className="text-sm text-gray-400 mt-2">Cover art from Instagram</p>
-        </div>
+        <Card className="bg-gray-900 border border-gray-700">
+          <CardContent className="p-4">
+            <h3 className="text-xl font-medium">New Song: "Sense of Direction"</h3>
+            <p className="text-sm">Releasing on May 20th, 2025 — All Platforms</p>
+            <img
+              src="/images/cover-art.jpg" // Replace with a proper static asset path
+              alt="Cover Art"
+              className="mt-4 w-full max-w-xs mx-auto rounded-xl"
+            />
+            <p className="text-sm text-gray-400 mt-2">Cover art</p>
+          </CardContent>
+        </Card>
         <div className="mt-6">
           <iframe
             src="https://open.spotify.com/embed/artist/2sli1fySJdb9m7v92wjali"
@@ -43,44 +51,48 @@ export default function BrandonWelshArtistPage() {
       <section className="my-12 text-center">
         <h2 className="text-3xl font-semibold mb-4">Live Shows</h2>
         <div className="grid gap-4 md:grid-cols-2 max-w-4xl mx-auto">
-          <div className="bg-gray-900 border border-gray-700 rounded-xl p-4">
-            <Calendar className="h-5 w-5 inline-block mr-2" />
-            <strong>Denver MiniFest</strong>
-            <p className="text-sm">November 2, 2025</p>
-            <a
-              href="https://bridgingmusic.com/event/denver-minifest-11-2-25"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-400 hover:underline"
-            >
-              Event Details
-            </a>
-          </div>
+          <Card className="bg-gray-900 border border-gray-700">
+            <CardContent className="p-4">
+              <Calendar className="h-5 w-5 inline-block mr-2" />
+              <strong>Denver MiniFest</strong>
+              <p className="text-sm">November 2, 2025</p>
+              <a
+                href="https://bridgingmusic.com/event/denver-minifest-11-2-25"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-400 hover:underline"
+              >
+                Event Details
+              </a>
+            </CardContent>
+          </Card>
 
-          <div className="bg-gray-900 border border-gray-700 rounded-xl p-4">
-            <Calendar className="h-5 w-5 inline-block mr-2" />
-            <strong>Boston MiniFest</strong>
-            <p className="text-sm">December 6, 2025</p>
-            <a
-              href="https://bridgingmusic.com/event/boston-minifest-12-6-25"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-400 hover:underline"
-            >
-              Event Details
-            </a>
-          </div>
+          <Card className="bg-gray-900 border border-gray-700">
+            <CardContent className="p-4">
+              <Calendar className="h-5 w-5 inline-block mr-2" />
+              <strong>Boston MiniFest</strong>
+              <p className="text-sm">December 6, 2025</p>
+              <a
+                href="https://bridgingmusic.com/event/boston-minifest-12-6-25"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-400 hover:underline"
+              >
+                Event Details
+              </a>
+            </CardContent>
+          </Card>
         </div>
       </section>
 
       <section className="my-12 text-center">
         <h2 className="text-3xl font-semibold mb-4">Photo Gallery</h2>
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-4xl mx-auto">
-          <img src="https://instagram.com/brandon_welsh_415/media/?size=l" alt="Gallery 1" className="rounded-xl shadow" />
-          <img src="https://instagram.com/brandon_welsh_415/media/?size=l" alt="Gallery 2" className="rounded-xl shadow" />
-          <img src="https://instagram.com/brandon_welsh_415/media/?size=l" alt="Gallery 3" className="rounded-xl shadow" />
+          <img src="/images/gallery1.jpg" alt="Gallery 1" className="rounded-xl shadow" />
+          <img src="/images/gallery2.jpg" alt="Gallery 2" className="rounded-xl shadow" />
+          <img src="/images/gallery3.jpg" alt="Gallery 3" className="rounded-xl shadow" />
         </div>
-        <p className="text-sm text-gray-400 mt-2">Images pulled from Instagram</p>
+        <p className="text-sm text-gray-400 mt-2">Images from the gallery</p>
       </section>
 
       <section className="my-12 text-center">
