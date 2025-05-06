@@ -97,15 +97,3 @@ export default function BrandonWelshArtistPage() {
     </main>
   );
 }
-npx create-next-app@latest
-npm install
-yarn install
-{
-  "dependencies": {
-    "next": "latest",
-    "react": "latest",
-    "react-dom": "latest"
-  }
-}
-/pages
-  /index.js  (or index.tsx if you're using TypeScript)
